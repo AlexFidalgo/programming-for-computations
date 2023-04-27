@@ -8,14 +8,16 @@ def trapezoidal(f, a, b, n):
     result *= h
     return result
 
-v = lambda t: 3*(t**2)*exp(t**3)
-n = 4
+if __name__ == '__main__':
 
-numerical = trapezoidal(v, 0, 1, n)
+    v = lambda t: 3*(t**2)*exp(t**3)
+    n = 4
 
-V = lambda t: exp(t**3)
-exact = V(1) - V(0)
+    numerical = trapezoidal(v, 0, 1, n)
 
-error = exact - numerical
+    V = lambda t: exp(t**3)
+    exact = V(1) - V(0)
 
-print('n=%d: %.16f, error: %g' % (n, numerical, error))
+    error = exact - numerical
+
+    print('n=%d: %.16f, error: %g' % (n, numerical, error))
