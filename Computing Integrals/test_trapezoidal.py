@@ -1,3 +1,5 @@
+from trapezoidal import trapezoidal
+
 def test_trapezoidal_one_exact_result():
     """Compare one hand-computed result."""
     from math import exp

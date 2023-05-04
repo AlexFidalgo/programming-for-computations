@@ -2,6 +2,14 @@ from numpy import exp
 from numpy import linspace
 
 def trapezoidal(f, a, b, n):
+    """
+    Returns the one-dimensional integral of f from a to b considering n intervals using the trapezoidal method
+
+    f : function
+    a : lower bound
+    b : upper bound
+    n : number of intervals
+    """
     h = float(b-a)/n
     result = 0.5*f(a) + 0.5*f(b)
     for i in range(1, n):
