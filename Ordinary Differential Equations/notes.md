@@ -14,4 +14,4 @@ Initial condition: $N(0) = N_0$. Then
 
 $$ N(\Delta{t}) = N_0 + \Delta{t} \cdot r \cdot N_0 $$
 
-$$ N((
+$$ N((k + 1)\Delta{t}) = N(k \cdot \Delta{t}) + \Delta{t} \cdot r \cdot N(k \cdot \Delta{t}) $$
